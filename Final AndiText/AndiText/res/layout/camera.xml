@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/blank"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="260dip"
+        android:layout_height="100dip"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="160dip"
+        android:maxWidth="160dip"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/pic_border"
+        android:layout_gravity="center"
+         />
+
+    <Button
+        android:id="@+id/extract"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Extract"
+        tools:ignore="MangledCRLF" />
+
+
+
+
+    <EditText
+        android:id="@+id/editT"
+        android:layout_width="match_parent"
+        android:layout_height="107dp"
+        android:ems="10"
+        android:hint="Text will appear here !!"
+        android:maxLines="3" />
+
+
+    <Button
+        android:id="@+id/trans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tranlsate" />
+
+
+    <EditText
+        android:id="@+id/TranslatedText"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:ems="10"
+        android:hint="Translated text !!"
+        android:maxLines="3" />
+
+
+    <Button
+        android:id="@+id/btnSpeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Speak" />
+
+</LinearLayout>

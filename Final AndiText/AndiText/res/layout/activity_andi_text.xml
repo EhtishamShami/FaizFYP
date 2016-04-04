@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bsb"
+    tools:context=".AndiText" >
+
+    <ImageButton
+        android:id="@+id/sys"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:background="@null"
+        android:src="@drawable/sys" />
+
+    <ImageButton
+        android:id="@+id/browse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/cambtn"
+        android:layout_marginRight="38dp"
+        android:background="@null"
+        android:src="@drawable/gal" />
+
+    <ImageButton
+        android:id="@+id/cambtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageButton1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="22dp"
+        android:background="@null"
+        android:src="@drawable/cam" />
+
+</RelativeLayout>

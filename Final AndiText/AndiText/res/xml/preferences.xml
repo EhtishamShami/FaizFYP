@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	
+	<!-- TRANSLATION SETTINGS -->
+	<PreferenceCategory android:title="Translation settings">
+
+		<CheckBoxPreference android:key="preference_translation_toggle_translation"
+			android:title="Translate"/>
+
+		<ListPreference android:key="targetLanguageCodeTranslationPref"  
+			android:title="Translate to"
+			android:dependency="preference_translation_toggle_translation"
+			android:entries="@array/translationtargetlanguagenames_microsoft" 
+			android:entryValues="@array/translationtargetiso6391_microsoft"
+			
+			 />
+			
+								
+	</PreferenceCategory>
+
+	<!-- ADVANCED SETTINGS -->
+	<PreferenceCategory android:title="Advanced settings">
+
+	    	    
+	    <CheckBoxPreference
+            android:key="preferences_play_beep"
+            android:title="Beep"/>
+	    	    
+
+	    
+	</PreferenceCategory>
+	
+</PreferenceScreen>
