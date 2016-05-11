@@ -48,8 +48,9 @@ class Preview extends SurfaceView implements SurfaceHolder.Callback {
 		System.gc(); 
 		Bitmap b = null;
 		Size s = mParameters.getPreviewSize();
-
 		YuvImage yuvimage = new YuvImage(mBuffer, ImageFormat.NV21, s.width, s.height, null);
+
+
 		ByteArrayOutputStream outStream = new ByteArrayOutputStream();
 		yuvimage.compressToJpeg(new Rect(x, y, width, height), 100, outStream); // make JPG
 		b = BitmapFactory.decodeByteArray(outStream.toByteArray(), 0, outStream.size()); // decode JPG
@@ -71,7 +72,13 @@ class Preview extends SurfaceView implements SurfaceHolder.Callback {
 		int h = mCamera.getParameters().getPreviewSize().height;
 		int w = mCamera.getParameters().getPreviewSize().width;
 		int bitsPerPixel = ImageFormat.getBitsPerPixel(mCamera.getParameters().getPreviewFormat());
+		try{
 		mBuffer = new byte[w * h * bitsPerPixel / 8];
+		}
+		catch(OutOfMemoryError e)
+		{
+			e.printStackTrace();
+		}
 		//Log.i("surfaceCreated", "buffer length is " + mBuffer.length + " bytes");
 	}
 

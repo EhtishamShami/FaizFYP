@@ -22,17 +22,19 @@ public final class R {
     public static final class attr {
     }
     public static final class drawable {
-        public static final int blank=0x7f020000;
-        public static final int bsb=0x7f020001;
-        public static final int cam=0x7f020002;
-        public static final int capture=0x7f020003;
-        public static final int corners=0x7f020004;
-        public static final int cornersx=0x7f020005;
-        public static final int gal=0x7f020006;
-        public static final int ic_launcher=0x7f020007;
-        public static final int icon=0x7f020008;
-        public static final int pic_border=0x7f020009;
-        public static final int sys=0x7f02000a;
+        public static final int backgroundmain=0x7f020000;
+        public static final int blank=0x7f020001;
+        public static final int bsb=0x7f020002;
+        public static final int cam=0x7f020003;
+        public static final int camera=0x7f020004;
+        public static final int capture=0x7f020005;
+        public static final int corners=0x7f020006;
+        public static final int cornersx=0x7f020007;
+        public static final int gal=0x7f020008;
+        public static final int ic_launcher=0x7f020009;
+        public static final int icon=0x7f02000a;
+        public static final int pic_border=0x7f02000b;
+        public static final int sys=0x7f02000c;
     }
     public static final class id {
         public static final int LinearLayout1=0x7f090004;
